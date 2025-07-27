@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devilsdream – Artistic Design Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">devilsdream</span>
+                <div class="logo-underline"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#studio" class="nav-link">Studio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">devils</span>
+                    <span class="title-line">dream</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <p class="subtitle-text">devilsdream is a design office that helps forward-thinking brands make their innovation clear and unmissable.</p>
+                </div>
+                <div class="hero-cta">
+                    <button class="cta-button" data-text="Explore Work">
+                        <span>Explore Work</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="morphing-shape"></div>
+                <div class="glitch-effect"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="portfolio">
+        <div class="section-header">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="branding">
+                <div class="portfolio-image">
+                    <div class="image-overlay"></div>
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>ESPN | CFP 2025</h3>
+                    <p>A new visual identity for ESPN | CFP.</p>
+                    <span class="category">Branding</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="digital">
+                <div class="portfolio-image">
+                    <div class="image-overlay"></div>
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Figure.02</h3>
+                    <p>The AI hardware company bringing a general purpose humanoid robot to life.</p>
+                    <span class="category">Digital</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="luxury">
+                <div class="portfolio-image">
+                    <div class="image-overlay"></div>
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Tiffany & Co.</h3>
+                    <p>Re-imagine their Classic Icons with festive holiday magic and wonder.</p>
+                    <span class="category">Luxury</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="luxury">
+                <div class="portfolio-image">
+                    <div class="image-overlay"></div>
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Hublot | The Arsham Droplet</h3>
+                    <p>A complete 360 campaign for the launch of the Arsham Droplet.</p>
+                    <span class="category">Luxury</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="digital">
+                <div class="portfolio-image">
+                    <div class="image-overlay"></div>
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Cash App</h3>
+                    <p>Cash App Taxes makes tax filing look and feel comfortable.</p>
+                    <span class="category">Digital</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="gaming">
+                <div class="portfolio-image">
+                    <div class="image-overlay"></div>
+                    <div class="hover-effect"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Riot Worlds 2022</h3>
+                    <p>A global championships event for League of Legends.</p>
+                    <span class="category">Gaming</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="digital">Digital</button>
+            <button class="filter-btn" data-filter="luxury">Luxury</button>
+            <button class="filter-btn" data-filter="gaming">Gaming</button>
+        </div>
+    </section>
+
+    <!-- Studio Section -->
+    <section id="studio" class="studio">
+        <div class="studio-content">
+            <div class="studio-text">
+                <h2 class="studio-title">Our Creative Process</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Discover</h3>
+                            <p>We dive deep into your brand's essence and vision.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Design</h3>
+                            <p>Crafting innovative solutions that captivate and inspire.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Deliver</h3>
+                            <p>Bringing your vision to life with precision and artistry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="studio-visual">
+                <div class="creative-element"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2 class="contact-title">Let's Create Something Extraordinary</h2>
+                <p class="contact-subtitle">Ready to transform your vision into reality?</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">hello@devilsdream.studio</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+1 (555) 123-4567</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                    <div class="form-line"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Your Email</label>
+                    <div class="form-line"></div>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                    <div class="form-line"></div>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <div class="btn-bg"></div>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="project-details">
+                    <h2 class="project-title"></h2>
+                    <p class="project-description"></p>
+                    <div class="project-images"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">devilsdream</div>
+            <div class="footer-text">
+                <p>&copy; 2024 devilsdream. Crafting extraordinary experiences.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <noscript>
+        <div class="noscript-message">
+            <p>Please enable JavaScript to experience the full artistic features of this website.</p>
+        </div>
+    </noscript>
+</body>
+</html>
